@@ -57,3 +57,18 @@ pytest -v
 ## Author
 
 **Abdullah Azmi** — [abdullahazmi.com](https://abdullahazmi.com) · [@aazminu](https://github.com/aazminu)
+
+
+## CLI Diagnostics & Invariant Verification
+
+Run the built-in deterministic diagnostic probe and invariant self-check directly via the module CLI:
+
+```bash
+PYTHONPATH=src python -m ergo_keymap --self-test --json
+```
+
+Run the complete regression test suite:
+
+```bash
+PYTHONPATH=src pytest -q
+```
